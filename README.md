@@ -3,12 +3,15 @@ slayd-api
 
 The API for SLAYD. To submit feedback, bugs or issues, please visit [slayd-api](https://github.com/orealeb/slayd/)
 
-## Prerequisites
+* [How to Use API](#use)
+* [Prerequisite](#prereq)
+* [How to Contribute](#contribute)
+* [Build Agent](#build)
+* [Production](#prod)
+* [Development](#dev)
+* [Local Development](#local-dev)
 
-- Node.js ~4.2.X and NPM
-- A Git client 
-
-## How to Use API
+## <a name="use"></a> How to Use API
 All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.com](https://slayd-api.heroku.com) or **Development Server** [slayd-api.heroku.com](https://slayd-api.heroku.com).
 
 #### RESTful API is used for all resources (User, xxx, xxx, xxx).
@@ -30,7 +33,13 @@ All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.co
   }); 
 ```
 
-## How to Contribute
+## <a name="prereq"></a> Prerequisites
+
+- Node.js ~4.2.X and NPM
+- A Git client 
+
+
+## <a name="contribute"></a> How to Contribute
 #### Step 1: Clone repo and cd into repo directory:
 ```
 git clone https://github.com/orealeb/slayd-api.git
@@ -88,16 +97,16 @@ git push origin YOUR_BRANCH
 That's it!
 
 
-### Build Agent
+### <a name="build"></a> Build Agent
 * If any changes a pushed to the **master** branch, [Heroku](https://heroku.com) build agent automatically updates the changes to production server
 * If any changes a pushed to the **development** branch, [Heroku](https://heroku.com) build agent automatically updates the changes to development server
 
-### Production Server
+### <a name="prod"></a> Production Server
 * [slayd-api.heroku.com](http://slayd-api.heroku.com)
 
-### Development Server
+### <a name="dev"></a> Development Server
 * [slayd-api-dev.heroku.com](http://slayd-api-dev.heroku.com)
 
-### Local Development
+### <a name="local-dev"></a> Local Development
 * [localhost:3000](http:/localhost:3000/)
 
