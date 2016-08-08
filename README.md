@@ -14,13 +14,13 @@ The API for SLAYD. To submit feedback, bugs or issues, please visit [slayd-api](
 ## <a name="use"></a> How to Use API
 All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.com](https://slayd-api.heroku.com) or **Development Server** [slayd-api.heroku.com](https://slayd-api.heroku.com).
 
-#### RESTful API is used for all resources (User, xxx, xxx, xxx).
+#### RESTful API is used for all resources (User, Products, xxx, xxx).
 
-1. Example JavaScript (with jQuery) HTTP call for a User:
+1. Example JavaScript (with jQuery) HTTP call to get **a** User with specified id:
 ```
  $.ajax({
       type: "GET",
-      url: "http://slayd-api.heroku.com/api/user/get", 
+      url: "http://slayd-api.heroku.com/api/users/get", 
       data: {
           "transactionID": id
       },
@@ -28,7 +28,25 @@ All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.co
         alert("ERROR");
       },
       success: function(data) {
-        alert(data);
+       //get user with specified id
+       alert(data);
+      }
+  }); 
+```
+2. Example JavaScript (with jQuery) HTTP call to get **all** Users:
+```
+ $.ajax({
+      type: "GET",
+      url: "http://slayd-api.heroku.com/api/users/", 
+      data: {
+          "transactionID": id
+      },
+      error: function() {
+        alert("ERROR");
+      },
+      success: function(data) {
+       //get all users
+       alert(data);
       }
   }); 
 ```
