@@ -16,7 +16,7 @@ All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.co
 
 #### RESTful API is used for all resources (User, Products, xxx, xxx).
 
-1. Example JavaScript (with jQuery) HTTP call to get **a** User with specified id:
+* Example JavaScript (with jQuery) HTTP call to get **a** User with specified id:
 ```
  $.ajax({
       type: "GET",
@@ -33,7 +33,7 @@ All HTTP requests can then be sent to **Production Server** [slayd-api.heroku.co
       }
   }); 
 ```
-2. Example JavaScript (with jQuery) HTTP call to get **all** Users:
+* Example JavaScript (with jQuery) HTTP call to get **all** Users:
 ```
  $.ajax({
       type: "GET",
